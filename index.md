@@ -3,19 +3,19 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "FIXME"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
-latitude: "45"        # decimal latitude of workshop venue (use https://www.latlong.net/)
-longitude: "-1"       # decimal longitude of the workshop venue (use https://www.latlong.net)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["instructor one", "instructor two"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["helper one", "helper two"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["first@example.org","second@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+venue: "千葉大学"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+address: "千葉大学 西千葉キャンパス　アカデミック・リンク・センター（図書館）I棟「まなび」"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
+country: "ja"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
+language: "ja"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
+latitude: "35.6273024"        # decimal latitude of workshop venue (use https://www.latlong.net/)
+longitude: "140.1025751"       # decimal longitude of the workshop venue (use https://www.latlong.net)
+humandate: "2024年5月30日（木）と31日（金）"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "10:00 - 17:00 (JST)"    # human-readable times for the workshop e.g., "9:00 am - 4:30 pm CEST (7:00 am - 2:30 pm UTC)"
+startdate: 2024-05-30      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2024-05-31        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["ニッタ ジョエル", "西田 孝三"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper:     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["joelnitta@chiba-u.jp"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -30,33 +30,6 @@ If the value is not 'true', 'false', 'null', or a number, please use
 double quotation marks around the value, unless specified otherwise.
 And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
-
-
-{% comment %}
-8< ============= For a workshop delete from here =============
-For a workshop please delete the following block until the next dashed-line
-{% endcomment %}
-
-
-<div class="alert alert-danger">
-This is the workshop template. Delete these lines and use it to
-<a href="https://carpentries.github.io/workshop-template/customization/index.html">customize</a>
-your own website. If you are running a self-organized workshop or have not put
-in a workshop request yet, please also fill in
-<a href="{{site.amy_site}}/forms/self-organised/">this workshop request form</a>
-to let us know about your workshop and our administrator may contact you if we
-need any extra information.
-If this is a pilot workshop for a new lesson,
-set the `pilot` field to `true` in `_config.yml`.
-For workshops teaching a lesson in The Carpentries Incubator,
-remember to uncomment the `incubator_lesson_site`, `incubator_pre_survey`, and `incubator_post_survey`
-fields in `_config.yml`
-</div>
-
-{% comment %}
-8< ============================= until here ==================
-{% endcomment %}
-
 
 {% comment %}
 Check DC curriculum
@@ -82,28 +55,7 @@ It looks like you are setting up a website for a Software Carpentry curriculum b
 {% endunless %}
 {% endif %}
 
-{% comment %}
-EVENTBRITE
-
-This block includes the Eventbrite registration widget if
-'eventbrite' has been set in the header.  You can delete it if you
-are not using Eventbrite, or leave it in, since it will not be
-displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<strong>Some adblockers block the registration window. If you do not see the
-  registration box below, please check your adblocker settings.</strong>
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="280px"
-  scrolling="auto">
-</iframe>
-{% endif %}
-
-
-<h2 id="general">General Information</h2>
+<h2 id="general">基本情報</h2>
 
 {% comment %}
 INTRODUCTION
@@ -208,15 +160,15 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong>
+  <strong>参加条件:</strong>
   {% if online == "false" %}
-    Participants must bring a laptop with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+    参加者は、管理者権限を持つMac/Linux/Windows OSを搭載した
+    ノートパソコン（タブレットやChromebookなどではなく）を持参する必要があります。
   {% else %}
-    Participants must have access to a computer with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
+    参加者は、管理者権限を持つMac/Linux/Windows OSを搭載した
+    コンピュータ（タブレットやChromebookなどではなく）にアクセスできる必要があります。
   {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+  いくつかの特定のソフトウェアパッケージ（ <a href="#setup">下部のリスト</a>）をインストールしてください。
 </p>
 
 {% comment %}
@@ -226,31 +178,25 @@ Modify the block below if there are any barriers to accessibility or
 special instructions.
 {% endcomment %}
 <p id="accessibility">
-  <strong>Accessibility:</strong>
+  <strong>アクセシビリティ:</strong>
 {% if online == "false" %}
-  We are committed to making this workshop
-  accessible to everybody.  For workshops at a physical location, the workshop organizers have checked that:
+  私たちは、このワークショップに誰もがアクセスできるようにすることを約束します。
+  ワークショップの主催者は次のことを確認しています：
 </p>
 <ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
+  <li>部屋は車椅子 / スクーターでのアクセスが可能です。</li>
+  <li>バリアフリーのトイレがあります。</li>
 </ul>
 <p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  get in touch (using contact details below) and we will
-  attempt to provide them.
+  事前に主催者に連絡することで、必要に応じて事前に資料を配布したり、
+  拡大印刷した配布資料を用意したりしています。
+  学習を容易にするためのお手伝い（例：手話通訳者や授乳施設など）が必要な場合は、
+  下記連絡先までご連絡ください。
 </p>
 {% else %}
-  We are dedicated to providing a positive and accessible learning environment for all. 
-  We do not require participants to provide documentation of disabilities or disclose any unnecessary personal information. 
-  However, we do want to help create an inclusive, accessible experience for all participants. 
-  We encourage you to share any information that would be helpful to make your Carpentries experience accessible.
-  To request an accommodation for this workshop, please fill out the 
-  <a href="https://carpentries.typeform.com/to/B2OSYaD0">accommodation request form</a>.
-  If you have questions or need assistance with the accommodation form please <a href="mailto:team@carpentries.org">email us</a>.
+  私たちは、すべての人にとってポジティブでアクセスしやすい学習環境を提供することに力を注いでいます。
+  他の施設が必要な場合や、このワークショップをより利用しやすくするためにできることがあれば、
+  事前に講師にお知らせください。
 </p>
 {% endif %}
 
@@ -260,12 +206,12 @@ CONTACT EMAIL ADDRESS
 Display the contact email address set in the configuration file.
 {% endcomment %}
 <p id="contact">
-  <strong>Contact:</strong>
-  Please email
+  <strong>連絡先:</strong>
+  お問い合わせは
   {% if page.email %}
   {% for email in page.email %}
   {% if forloop.last and page.email.size > 1 %}
-  or
+  または
   {% else %}
   {% unless forloop.first %}
   ,
@@ -274,15 +220,16 @@ Display the contact email address set in the configuration file.
   <a href='mailto:{{email}}'>{{email}}</a>
   {% endfor %}
   {% else %}
-  to-be-announced
+  未定
   {% endif %}
-  for more information.
+  にメールをお送りください。
 </p>
 
 <p id="roles">
-  <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
+  <strong>役割:</strong>
+  ワークショップでの役割（誰が何をするのか）を知るには、
+  <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">ワークショップ
+  のFAQ</a>をご参照ください。
 </p>
 
 {% comment %}
@@ -311,15 +258,16 @@ Edit the text to match who can attend the workshop. For instance:
 {% comment%}
 CODE OF CONDUCT
 {% endcomment %}
-<h2 id="code-of-conduct">Code of Conduct</h2>
+<h2 id="code-of-conduct">行動規範</h2>
 
 <p>
-Everyone who participates in Carpentries activities is required to conform to the <a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Code of Conduct</a>. This document also outlines how to report an incident if needed.
+カーペントリーズの活動に参加するすべての人は、<a href="https://carpentries-coc.readthedocs.io/ja/latest/topic_folders/policies/code-of-conduct.html">行動規範</a>を遵守しなければなりません。
+この文書には、必要に応じてインシデントが発生した場合の報告方法の概要も記載されています。
 </p>
 
 <p class="text-center">
-  <a href="https://goo.gl/forms/KoUfO53Za3apOuOK2">
-    <button type="button" class="btn btn-info">Report a Code of Conduct Incident</button>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeYqO37p0P-5JsEoF-E_edpZM5iRdFxWHTFqILo6LzqGS33YQ/viewform?fbzx=-8556883400541824673">
+    <button type="button" class="btn btn-info">行動規範のインシデントの報告</button>
   </a>
 </p>
 <hr/>
@@ -339,10 +287,11 @@ Note we also have a CodiMD (the open-source version of HackMD)
 available at https://codimd.carpentries.org
 {% endcomment %}
 {% if page.collaborative_notes %}
-<h2 id="collaborative_notes">Collaborative Notes</h2>
+<h2 id="collaborative_notes">コラボレイティブ・ノート</h2>
 
 <p>
-We will use this <a href="{{ page.collaborative_notes }}">collaborative document</a> for chatting, taking notes, and sharing URLs and bits of code.
+この<a href="{{ page.collaborative_notes }}">コラボレイティブ・ドキュメント</a>を使って、
+チャット、メモの作成、URLとコードの一部の共有を行います。
 </p>
 <hr/>
 {% endif %}
@@ -351,26 +300,13 @@ We will use this <a href="{{ page.collaborative_notes }}">collaborative document
 {% comment %}
 SURVEYS - DO NOT EDIT SURVEY LINKS
 {% endcomment %}
-<h2 id="surveys">Surveys</h2>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-{% if site.carpentry == "incubator" %}
-<p><a href="{{ site.incubator_pre_survey }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.incubator_post_survey }}">Post-workshop Survey</a></p>
-{% elsif site.incubator_pre_survey or site.incubator_post_survey %}
-<div class="alert alert-danger">
-WARNING: you have defined custom pre- and/or post-survey links for
-a workshop not configured for The Carpentries Incubator
-(the value of `curriculum` is not set to `incubator` in `_config.yml`).
-Please comment out the `incubator_pre_survey` and `incubator_post_survey` fields
-in `_config.yml` or, if this workshop is teaching a lesson in the Incubator,
-change the value of `carpentry` to `incubator`.
-</div>
-{% else %}
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-{% endif %}
-
+{% comment %}
+<h2 id="surveys">アンケート</h2>
+<p>ワークショップの前後に、これらのアンケートに必ずお答えください。</p>
+<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">ワークショップ前のアンケート</a></p>
+<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">ワークショップ後のアンケート</a></p>
 <hr/>
+{% endcomment %}
 
 
 {% comment %}
@@ -395,7 +331,7 @@ of code below the Schedule `<h2>` header below with
 `{% include custom-schedule.html %}`.
 {% endcomment %}
 
-<h2 id="schedule">Schedule</h2>
+<h2 id="schedule">スケジュール</h2>
 
 {% if site.carpentry == "swc" %}
 {% include swc/schedule.html %}
@@ -403,22 +339,15 @@ of code below the Schedule `<h2>` header below with
 {% include dc/schedule.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/schedule.html %}
-{% elsif site.carpentry == "incubator" %}
-This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
-Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
 {% endif %}
 
-{% comment %}
-Edit/replace the text above if you want to include a schedule table.
-See the contents of the _includes/custom-schedule.html file for an example of
-how one of these schedule tables is constructed.
-{% endcomment %}
+<p>以上のスケージュルは目安で、実際の内容とは異なることがあります。</p>
 
-{% if site.pilot %}
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please [contact the workshop organisers](#contact) if you would like more information about the planned schedule.
-{% endif %}
+<p>ワークショップの教材は<a href = "https://swcarpentry-ja.github.io/git-novice/">こちら</a>から見られます。</p>
 
 <hr/>
+
+
 
 
 {% comment %}
@@ -433,25 +362,24 @@ please preview your site before committing, and make sure to run
 'tools/check' as well.
 {% endcomment %}
 
-<h2 id="setup">Setup</h2>
+<h2 id="setup">セットアップ</h2>
 
 <p>
-  To participate in a
   {% if site.carpentry == "swc" %}
-  Software Carpentry
+  ソフトウェア・カーペントリー
   {% elsif site.carpentry == "dc" %}
-  Data Carpentry
+  データ・カーペントリー
   {% elsif site.carpentry == "lc" %}
-  Library Carpentry
+  ライブラリー・カーペントリー
   {% endif %}
-  workshop,
-  you will need access to software as described below.
-  In addition, you will need an up-to-date web browser.
+  のワークショップに参加するためには、
+  以下のソフトウェアにアクセスできる必要があります。
+  さらに、最新のWebブラウザが必要になります。
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
-  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
+  講師向けの参考資料として、
+  <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">
+  「構成の問題と解決策」のwikiページ</a>上で、インストール中に発生しがちな問題のリストを管理しています。
 </p>
 
 {% comment %}
@@ -462,7 +390,7 @@ For online workshops, the section below provides:
 
 If you do not use Zoom for your online workshop, edit the file
 `_includes/install_instructions/videoconferencing.html`
-to include the relevant installation instructions.
+to include the relevant installation instrucctions.
 {% endcomment %}
 {% if online != "false" %}
 {% include install_instructions/videoconferencing.html %}
@@ -479,8 +407,4 @@ during the workshop.
 {% include dc/setup.html %}
 {% elsif site.carpentry == "lc" %}
 {% include lc/setup.html %}
-{% elsif site.carpentry == "incubator" %}
-Please check the "Setup" page of
-[the lesson site]({{ site.incubator_lesson_site }}) for instructions to follow
-to obtain the software and data you will need to follow the lesson.
 {% endif %}
