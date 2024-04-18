@@ -381,6 +381,8 @@ please preview your site before committing, and make sure to run
   「構成の問題と解決策」のwikiページ</a>上で、インストール中に発生しがちな問題のリストを管理しています。
 </p>
 
+<p>なお、インストールの説明は現時点、英語のみとなっています（翻訳を貢献したい方は是非インストラクターまでご連絡お願いします（<a href='mailto:{{email}}'>{{email}}</a>）。</p>
+
 {% comment %}
 For online workshops, the section below provides:
 - installation instructions for the Zoom client
