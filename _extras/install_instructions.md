@@ -11,6 +11,7 @@ tools:
   - shell
   - sql
   - videoconferencing
+  - docker
 ---
 
 {% comment %}

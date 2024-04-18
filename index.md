@@ -381,7 +381,7 @@ please preview your site before committing, and make sure to run
   「構成の問題と解決策」のwikiページ</a>上で、インストール中に発生しがちな問題のリストを管理しています。
 </p>
 
-<p>なお、インストールの説明は現時点、英語のみとなっています（翻訳を貢献したい方は是非インストラクターまでご連絡お願いします（<a href='mailto:joelnitta@chibu-u.jp'>joelnitta@chibu-u.jp</a>）。</p>
+<p>なお、<strong>インストールの説明は現時点、英語のみとなっています</strong>（翻訳を貢献したい方は是非インストラクターまでご連絡お願いします（<a href='mailto:joelnitta@chibu-u.jp'>joelnitta@chibu-u.jp</a>）。</p>
 
 {% comment %}
 For online workshops, the section below provides:
@@ -404,6 +404,7 @@ during the workshop.
 
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
+{% include install_instructions/docker.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/setup.html %}
 {% elsif site.carpentry == "lc" %}
