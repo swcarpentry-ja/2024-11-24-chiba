@@ -65,15 +65,15 @@ the pitch.
 {% endcomment %}
 
 <p>
-<strong><a href="https://carpentries.org">The Carpentries</a></strong> project comprises the <a
-href="{{site.swc_site}}">Software Carpentry</a>, <a href="{{site.dc_site}}">Data Carpentry</a>, and
-<a href="{{site.lc_site}}">Library Carpentry</a> communities of Instructors, Trainers, Maintainers,
-helpers, and supporters who share a mission to teach foundational computational and data science
-skills to researchers.
+<strong><a href="https://carpentries.org">The Carpentries</a></strong>プロジェクトは、
+インストラクター、トレーナー、メンテナンス担当者、ヘルパー、およびサポーターで構成される
+<a href="{{site.swc_site}}">Software Carpentry</a>、 <a href="{{site.dc_site}}">Data Carpentry</a>、<a href="{{site.lc_site}}">Library Carpentry</a> の
+コミュニティから成り立っており、研究者に基本的な計算科学とデータサイエンスのスキルを教えるという使命を共有しています。
+
 <p align="center">
   <em>
-  <strong>Want to learn more and stay engaged with The Carpentries?</strong> Carpentries Clippings is The Carpentries' biweekly newsletter, where we share community news, community job postings, and more.
-Sign up to receive future editions and read our full archive: <a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
+  <strong>The Carpentriesについてもっと学び、関わり続けたいですか？</strong>「Carpentries Clippings」は、The Carpentriesの隔週ニュースレターで、コミュニティのニュース、コミュニティの求人情報などを共有しています。
+  将来の版を受け取り、完全なアーカイブを読むためにサインアップしてください：<a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
   </em>
 </p>
 {% if site.carpentry == "swc" %}
@@ -120,12 +120,11 @@ address.
 {% endif %}
 {% if page.latitude and page.longitude and online == "false" %}
 <p id="where">
-  <strong>Where:</strong>
+  <strong>場所:</strong>
   {{page.address}}.
-  Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latitude}}&mlon={{page.longitude}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>.
+  か
+  <a href="//maps.google.com/maps?q={{page.latitude}},{{page.longitude}}">Google Maps</a>で場所を確認する.
 </p>
 {% elsif online == "true_public" %}
 <p id="where">
@@ -148,7 +147,7 @@ This block displays the date and links to Google Calendar.
 {% endcomment %}
 {% if page.humandate %}
 <p id="when">
-  <strong>When:</strong>
+  <strong>日程:</strong>
   {{page.humandate}}.
   {% include workshop_calendar.html %}
 </p>
