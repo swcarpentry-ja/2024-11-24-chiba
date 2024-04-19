@@ -68,12 +68,13 @@ the pitch.
 <strong><a href="https://carpentries.org">The Carpentries</a></strong>プロジェクトは、
 インストラクター、トレーナー、メンテナンス担当者、ヘルパー、およびサポーターで構成される
 <a href="{{site.swc_site}}">Software Carpentry</a>、 <a href="{{site.dc_site}}">Data Carpentry</a>、<a href="{{site.lc_site}}">Library Carpentry</a> の
-コミュニティから成り立っており、研究者に基本的な計算科学とデータサイエンスのスキルを教えるという使命を共有しています。
+コミュニティから成り立っており、「研究者に基本的な計算科学とデータサイエンスのスキルを教える」という使命を共有しています。
 
 <p align="center">
   <em>
-  <strong>The Carpentriesについてもっと学び、関わり続けたいですか？</strong>「Carpentries Clippings」は、The Carpentriesの隔週ニュースレターで、コミュニティのニュース、コミュニティの求人情報などを共有しています。
-  将来の版を受け取り、完全なアーカイブを読むためにサインアップしてください：<a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
+  <strong>The Carpentriesについてもっと学び、関わり続けたいですか？</strong><br />
+  「Carpentries Clippings」は、The Carpentriesの隔週ニュースレターで、コミュニティのニュース、コミュニティの求人情報などを共有しています。
+  将来の版を受け取り、完全なアーカイブを読むにはサインアップを行ってください：<a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
   </em>
 </p>
 {% if site.carpentry == "swc" %}
