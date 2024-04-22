@@ -3,7 +3,7 @@ layout: workshop      # DON'T CHANGE THIS.
 # More detailed instructions (including how to fill these variables for an
 # online workshop) are available at
 # https://carpentries.github.io/workshop-template/customization/index.html
-venue: "千葉大学"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
+venue: "千葉大学 西千葉キャンパス　アカデミック・リンク・センター"        # brief name of the institution that hosts the workshop without address (e.g., "Euphoric State University")
 address: "千葉大学 西千葉キャンパス　アカデミック・リンク・センター（図書館）I棟「まなび」"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria"), videoconferencing URL, or 'online'
 country: "ja"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes) for the institution that hosts the workshop
 language: "ja"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for the workshop
@@ -74,7 +74,7 @@ the pitch.
   <em>
   <strong>The Carpentriesについてもっと学び、関わり続けたいですか？</strong><br />
   「Carpentries Clippings」は、The Carpentriesの隔週ニュースレターで、コミュニティのニュース、コミュニティの求人情報などを共有しています。
-  将来の版を受け取り、完全なアーカイブを読むにはサインアップを行ってください：<a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
+  将来の版を受け取り、完全なアーカイブを読むには次の URL から「サインアップ」を行ってください：<a href="https://carpentries.org/newsletter/">https://carpentries.org/newsletter/</a>
   </em>
 </p>
 {% if site.carpentry == "swc" %}
@@ -162,13 +162,13 @@ Modify the block below if there are any special requirements.
 <p id="requirements">
   <strong>参加条件:</strong>
   {% if online == "false" %}
-    参加者は、管理者権限を持つMac/Linux/Windows OSを搭載した
-    ノートパソコン（タブレットやChromebookなどではなく）を持参する必要があります。
+    参加者は、管理者権限を持つ Mac/Linux/Windows OSを搭載した
+    ノートパソコン（タブレットや Chromebook などではなく）を持参する必要があります。
   {% else %}
     参加者は、管理者権限を持つMac/Linux/Windows OSを搭載した
     コンピュータ（タブレットやChromebookなどではなく）にアクセスできる必要があります。
   {% endif %}
-  いくつかの特定のソフトウェアパッケージ（ <a href="#setup">下部のリスト</a>）をインストールしてください。
+  いくつかの特定のソフトウェアパッケージ（ <a href="#setup">下部の「セットアップ」以降の Bash, Git, Text Editor, Docker</a>）をインストールしてください。
 </p>
 
 {% comment %}
@@ -180,7 +180,7 @@ special instructions.
 <p id="accessibility">
   <strong>アクセシビリティ:</strong>
 {% if online == "false" %}
-  私たちは、このワークショップに誰もがアクセスできるようにすることを約束します。
+  私たちは、このワークショップへのアクセシビリティを約束します。
   ワークショップの主催者は次のことを確認しています：
 </p>
 <ul>
