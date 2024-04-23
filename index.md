@@ -343,7 +343,7 @@ of code below the Schedule `<h2>` header below with
 
 <p>以上のスケージュルは目安で、実際の内容とは異なることがあります。</p>
 
-<p>ワークショップの教材は<a href = "https://swcarpentry-ja.github.io/git-novice/">こちら</a>から見られます。</p>
+<p>ワークショップの教材はこちらから見られます：<a href = "https://swcarpentry-ja.github.io/git-novice/">git</a>、<a href = "https://swcarpentry-ja.github.io/shell-novice/">ユニックス シェル</a>、<a href = "https://carpentries-incubator.github.io/docker-introduction/">Docker</a>。</p>
 
 <hr/>
 
