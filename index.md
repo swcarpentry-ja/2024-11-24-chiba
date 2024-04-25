@@ -104,6 +104,16 @@ workshop is only open to people from a particular institution.
 {% endif %}
 
 {% comment %}
+REGISTRATION
+{% endcomment %}
+
+<p>
+  <strong>登録:</strong>
+  <a href="https://carpentries.connpass.com/event/316747/">Connpass</a>から登録して下さい。
+</p>
+
+
+{% comment %}
 LOCATION
 
 This block displays the address and links to maps showing directions
