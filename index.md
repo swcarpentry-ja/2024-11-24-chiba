@@ -358,13 +358,11 @@ of code below the Schedule `<h2>` header below with
 
 <hr/>
 
-<h2 id="slides">教材</h2>
+<h2 id="slides">スライド</h2>
 
-<p>ワークショップのスライドはこちらから見られます：<a href = "https://swcarpentry-ja.github.io/shell-novice/">ユニックス シェル</a>、<a href = "https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/git/">git</a>、<a href = "https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/docker/">Docker</a>。</p>
+<p>ワークショップのスライドはこちらから見られます：<a href = "https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/shell/">ユニックス シェル</a>、<a href = "https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/git/">git</a>、<a href = "https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/docker/">Docker</a>。</p>
 
 <hr/>
-
-<h2 id="setup">セットアップ</h2>
 
 {% comment %}
 SETUP
