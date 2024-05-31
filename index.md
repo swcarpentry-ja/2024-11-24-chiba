@@ -350,12 +350,21 @@ of code below the Schedule `<h2>` header below with
 
 <p>以上のスケージュルは目安で、実際の内容とは異なることがあります。</p>
 
-<p>ワークショップの教材はこちらから見られます：<a href = "https://swcarpentry-ja.github.io/git-novice/">git</a>、<a href = "https://swcarpentry-ja.github.io/shell-novice/">ユニックス シェル</a>、<a href = "https://carpentries-incubator.github.io/docker-introduction/">Docker</a>。</p>
+<hr/>
+
+<h2 id="materials">教材</h2>
+
+<p>ワークショップの教材はこちらから見られます：<a href = "https://swcarpentry-ja.github.io/shell-novice/">ユニックス シェル</a>、<a href = "https://swcarpentry-ja.github.io/git-novice/">git</a>、<a href = "https://carpentries-incubator.github.io/docker-introduction/">Docker</a>。</p>
 
 <hr/>
 
+<h2 id="slides">教材</h2>
 
+<p>ワークショップのスライドはこちらから見られます：<a href = "https://swcarpentry-ja.github.io/shell-novice/">ユニックス シェル</a>、<a href = "https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/git/">git</a>、<a href = "https://swcarpentry-ja.github.io/2024-05-30-chiba-slides/docker/">Docker</a>。</p>
 
+<hr/>
+
+<h2 id="setup">セットアップ</h2>
 
 {% comment %}
 SETUP
