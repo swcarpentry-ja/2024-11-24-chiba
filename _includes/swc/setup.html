@@ -6,9 +6,6 @@
 {% include install_instructions/shell.html %}
 {% include install_instructions/git.html %}
 {% include install_instructions/editor.html %}
-
-{% comment %} removed r / python intructions for this workshop
-
 {% if site.flavor == "r" %}
 {% include install_instructions/r.html %}
 {% elsif site.flavor == "python" %}
@@ -20,8 +17,6 @@
 {% include warning-flavor.html %}
 {% endif %}
 
-{% endcomment %}
-
 {% comment %}
 The following setup instructions are commented out because Carpentries workshops
 cover the these topics less frequently. Please uncomment the lines that
@@ -29,4 +24,5 @@ correspond to the topics covered in your workshop.
 
 {% include install_instructions/sql.html %}
 {% include install_instructions/openrefine.html %}
+{% include install_instructions/docker.html %}
 {% endcomment %}

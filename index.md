@@ -178,7 +178,7 @@ Modify the block below if there are any special requirements.
     参加者は、管理者権限を持つMac/Linux/Windows OSを搭載した
     コンピュータ（タブレットやChromebookなどではなく）にアクセスできる必要があります。
   {% endif %}
-  いくつかの特定のソフトウェアパッケージ（ <a href="#setup">下部の「セットアップ」以降の Bash, Git, Text Editor, Docker</a>）をインストールしてください。
+  いくつかの特定のソフトウェアパッケージ（ <a href="#setup">下部の「セットアップ」以降の Bash, Git, Text Editor, R</a>）をインストールしてください。
 </p>
 
 {% comment %}
@@ -419,7 +419,6 @@ during the workshop.
 
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
-{% include install_instructions/docker.html %}
 {% elsif site.carpentry == "dc" %}
 {% include dc/setup.html %}
 {% elsif site.carpentry == "lc" %}
