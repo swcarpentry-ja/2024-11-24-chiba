@@ -109,7 +109,7 @@ REGISTRATION
 
 <p>
   <strong>登録:</strong>
-  <a href="https://carpentries.connpass.com/event/316747/">Connpass</a>から登録して下さい。
+  <a href="https://carpentries.connpass.com/event/334239/">Connpass</a>から登録して下さい。
 </p>
 
 
