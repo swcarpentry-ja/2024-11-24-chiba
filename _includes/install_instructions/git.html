@@ -1,26 +1,19 @@
 {% comment %}
-Git Setup instructions rely on Shell instructions. If you don't include
-Shell instructions as part of your workshop website, make sure to adjust
-the text below accordingly.
+Gitのセットアップ手順は、Shellの手順に依存しています。ワークショップのウェブサイトにShellの手順を含めない場合は、以下のテキストを適宜調整してください。
 {% endcomment %}
 <div id="git">
   <h3>Git</h3>
   <p>
-    Git is a version control system that lets you track who made changes
-    to what when and has options for easily updating a shared or public
-    version of your code
-    on <a href="https://github.com/">github.com</a>. You will need a
-    <a href="https://help.github.com/articles/supported-browsers/">supported
-    web browser</a>.
+    Gitは、誰がどの部分をいつ変更したのかを追跡できるバージョン管理システムで、
+    <a href="https://github.com/">github.com</a>でコードの共有または公開バージョンを簡単に更新するためのオプションも備えています。
+    <a href="https://help.github.com/articles/supported-browsers/">サポートされているウェブブラウザ</a>が必要です。
   </p>
   <p>
-    You will need an account at <a href="https://github.com/">github.com</a>
-    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
-    you to create a GitHub account if you don't have one already.
-    Please consider what personal information you'd like to reveal. For
-    example, you may want to review these
-    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
-      for keeping your email address private</a> provided at GitHub.
+    Gitのレッスンの一部では、<a href="https://github.com/">github.com</a>のアカウントが必要です。基本的なGitHubアカウントは無料です。
+    まだアカウントをお持ちでない場合は、GitHubアカウントを作成することをお勧めします。
+    公開する個人情報についてはよく考えてください。たとえば、
+    GitHubが提供する<a href="https://help.github.com/articles/keeping-your-email-address-private/">メールアドレスを非公開にする方法</a>
+    を確認してみてください。
   </p>
 
   <div>
@@ -33,26 +26,24 @@ the text below accordingly.
     <div class="tab-content">
       <article role="tabpanel" class="tab-pane active" id="git-windows">
         <p>
-          Git should be installed on your computer as part of your Bash
-          install (see the
-          <a href="#shell">Shell installation instructions</a>).
+          Gitは、Bashのインストールの一部としてコンピュータにインストールされるはずです（
+          <a href="#shell">Shellインストール手順</a>を参照してください）。
         </p>
       </article>
       <article role="tabpanel" class="tab-pane" id="git-macos">
         <p>
-          <strong>For macOS</strong>, install Git for Mac
-          by downloading and running the most recent "mavericks" installer from
-          <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
-          Because this installer is not signed by the developer, you may have to
-          right click (control click) on the .pkg file, click Open, and click
-          Open on the pop up window.
-          After installing Git, there will not be anything in your <code>/Applications</code> folder,
-          as Git is a command line program.
-          <strong>For older versions of OS X (10.5-10.8)</strong> use the
-          most recent available installer labelled "snow-leopard"
-          <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
+          <strong>macOSの場合</strong>、
+          <a href="http://sourceforge.net/projects/git-osx-installer/files/">このリスト</a>
+          から最新の「mavericks」インストーラーをダウンロードして実行することでGit for Macをインストールします。
+          このインストーラーは開発者によって署名されていないため、.pkgファイルを右クリック（またはcontrolクリック）し、
+          「開く」をクリックして、ポップアップウィンドウで「開く」をクリックする必要がある場合があります。
+          Gitをインストールしても<code>/Applications</code>フォルダに何も表示されません。Gitはコマンドラインプログラムです。
+          <strong>OS Xの古いバージョン（10.5-10.8）の場合</strong>、
+          最新の「snow-leopard」ラベルのインストーラーを
+          <a href="http://sourceforge.net/projects/git-osx-installer/files/">こちら</a>
+          からダウンロードしてください。
         </p>
-        <h4>Video Tutorial</h4>
+        <h4>ビデオチュートリアル</h4>
         <div class="yt-wrapper2">
         <div class="yt-wrapper">
           <iframe type="text/html" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/9LQhwETCdwY?modestbranding=1&playsinline=1&iv_load_policy=3&rel=0" class="yt-frame" allowfullscreen></iframe>
@@ -61,10 +52,9 @@ the text below accordingly.
       </article>
       <article role="tabpanel" class="tab-pane" id="git-linux">
         <p>
-          If Git is not already available on your machine you can try to
-          install it via your distro's package manager. For Debian/Ubuntu run
-          <code>sudo apt-get install git</code> and for Fedora run
-          <code>sudo dnf install git</code>.
+          Gitが既にマシンにインストールされていない場合、ディストリビューションのパッケージマネージャーを使用してインストールを試みることができます。
+          Debian/Ubuntuの場合は<code>sudo apt-get install git</code>を実行し、
+          Fedoraの場合は<code>sudo dnf install git</code>を実行します。
         </p>
       </article>
     </div>
