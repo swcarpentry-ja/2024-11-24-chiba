@@ -354,13 +354,13 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="materials">教材</h2>
 
-<p>ワークショップの教材はこちらから見られます：<a href = "https://swcarpentry-ja.github.io/shell-novice/">ユニックス シェル</a>、<a href = "https://swcarpentry-ja.github.io/git-novice/">git</a>、<a href = "https://swcarpentry-ja.github.io/r-novice-gapminder/">R</a>。</p>
+<p>ワークショップの教材はこちらから見られます：<a href = "https://swcarpentry-ja.github.io/shell-novice/">Unixシェル</a>、<a href = "https://swcarpentry-ja.github.io/git-novice/">git</a>、<a href = "https://swcarpentry-ja.github.io/r-novice-gapminder/">R</a>。</p>
 
 <hr/>
 
 <h2 id="slides">スライド</h2>
 
-<p>ワークショップのスライドはこちらから見られます：<a href = "https://swcarpentry-ja.github.io/2024-11-24-chiba-slides/shell/">ユニックス シェル</a>、<a href = "https://swcarpentry-ja.github.io/2024-11-24-chiba-slides/git/">git</a>、<a href = "https://swcarpentry-ja.github.io/2024-11-24-chiba-slides/r/">R</a>。</p>
+<p>ワークショップのスライドは<a href = "https://swcarpentry-ja.github.io/2024-11-25-chiba-slides/">こちら</a>から見られます。</p>
 
 <hr/>
 
